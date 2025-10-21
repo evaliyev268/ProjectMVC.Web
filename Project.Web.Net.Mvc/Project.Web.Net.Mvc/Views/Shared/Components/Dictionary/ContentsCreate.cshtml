@@ -1,0 +1,29 @@
+﻿@using Project.Web.Net.Mvc.ViewModels
+@model ContentViewModel
+
+
+<form>
+    <input type="hidden" asp-for="Id"/>
+    <div class="mb-2">
+        <label class="form-label" asp-for="Topic">Topic</label>
+        <input class="form-control" asp-for="Topic"/>
+        <span class="text-danger" asp-validation-for="Topic"></span>
+    </div>
+    <div class="mb-2">
+        <label class="form-label" asp-for="Author">Author</label>
+        <input class="form-control" asp-for="Author" />
+        <span class="text-danger" asp-validation-for="Author"></span>
+    </div>
+    <div class="mb-2">
+        <label class="form-label" asp-for="AuthorsOpinion">Topic</label>
+        <input class="form-control" asp-for="AuthorsOpinion" />
+        <span class="text-danger" asp-validation-for="AuthorsOpinion"></span>
+    </div>
+    <div class="mb-2">
+        <label class="form-label" asp-for="Date">Date</label>
+        <input class="form-control" asp-for="Date" />
+        <span class="text-danger" asp-validation-for="Date"></span>
+    </div>
+
+
+</form>

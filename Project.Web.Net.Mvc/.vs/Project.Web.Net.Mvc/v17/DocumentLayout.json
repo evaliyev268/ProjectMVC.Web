@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\views\\dictionary\\contentupgrade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\views\\dictionary\\contentupgrade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\controllers\\dictionarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\controllers\\dictionarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\viewmodels\\contentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\viewmodels\\contentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\views\\shared\\viewcomponents\\dictionaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\views\\shared\\viewcomponents\\dictionaryviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\views\\shared\\components\\dictionary\\contentsupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\views\\shared\\components\\dictionary\\contentsupdate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\views\\shared\\components\\dictionary\\contents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\views\\shared\\components\\dictionary\\contents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\views\\dictionary\\contentsindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\views\\dictionary\\contentsindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|c:\\users\\evali\\source\\repos\\evaliyev268\\projectmvc.web\\project.web.net.mvc\\project.web.net.mvc\\migrations\\20251020100050_addedcontentsmg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31A7FD75-AB02-497A-A5BA-8C59943442BB}|Project.Web.Net.Mvc\\Project.Web.Net.Mvc.csproj|solutionrelative:project.web.net.mvc\\migrations\\20251020100050_addedcontentsmg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,27 +75,131 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\appsettings.json",
-              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\appsettings.json",
-              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\appsettings.json",
-              "RelativeToolTip": "Project.Web.Net.Mvc\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-10T15:57:45.309Z",
+              "Title": "ContentUpgrade.cshtml",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Dictionary\\ContentUpgrade.cshtml",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Views\\Dictionary\\ContentUpgrade.cshtml",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Dictionary\\ContentUpgrade.cshtml*",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Views\\Dictionary\\ContentUpgrade.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T13:45:46.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Project.Web.Net.Mvc\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
+              "Title": "DictionaryController.cs",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Controllers\\DictionaryController.cs",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Controllers\\DictionaryController.cs",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Controllers\\DictionaryController.cs",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Controllers\\DictionaryController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-10T15:52:42.519Z",
+              "WhenOpened": "2025-10-20T13:39:58.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContentsUpdate.cshtml",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Shared\\Components\\Dictionary\\ContentsUpdate.cshtml",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Views\\Shared\\Components\\Dictionary\\ContentsUpdate.cshtml",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Shared\\Components\\Dictionary\\ContentsUpdate.cshtml",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Views\\Shared\\Components\\Dictionary\\ContentsUpdate.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T13:26:08.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContentViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\ViewModels\\ContentViewModel.cs",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\ViewModels\\ContentViewModel.cs",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\ViewModels\\ContentViewModel.cs",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\ViewModels\\ContentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T12:21:03.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DictionaryViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Shared\\ViewComponents\\DictionaryViewComponent.cs",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Views\\Shared\\ViewComponents\\DictionaryViewComponent.cs",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Shared\\ViewComponents\\DictionaryViewComponent.cs",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Views\\Shared\\ViewComponents\\DictionaryViewComponent.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAADMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T10:13:44.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Contents.cshtml",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Shared\\Components\\Dictionary\\Contents.cshtml",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Views\\Shared\\Components\\Dictionary\\Contents.cshtml",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Shared\\Components\\Dictionary\\Contents.cshtml",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Views\\Shared\\Components\\Dictionary\\Contents.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T10:05:10.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-20T13:09:25.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ContentsIndex.cshtml",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Dictionary\\ContentsIndex.cshtml",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Views\\Dictionary\\ContentsIndex.cshtml",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\Dictionary\\ContentsIndex.cshtml",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Views\\Dictionary\\ContentsIndex.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T10:04:42.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-20T12:02:08.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20251020100050_addedcontentsmg.cs",
+              "DocumentMoniker": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Migrations\\20251020100050_addedcontentsmg.cs",
+              "RelativeDocumentMoniker": "Project.Web.Net.Mvc\\Migrations\\20251020100050_addedcontentsmg.cs",
+              "ToolTip": "C:\\Users\\evali\\source\\repos\\evaliyev268\\ProjectMVC.Web\\Project.Web.Net.Mvc\\Project.Web.Net.Mvc\\Migrations\\20251020100050_addedcontentsmg.cs",
+              "RelativeToolTip": "Project.Web.Net.Mvc\\Migrations\\20251020100050_addedcontentsmg.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T10:00:54.566Z",
               "EditorCaption": ""
             },
             {
