@@ -29,25 +29,15 @@ namespace Project.Web.Net.Mvc.Views.Shared.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync(int type=0)
         {
-
-            
-
-            var dList = _context.Contents.ToList();
-
-            var list = _mapper.Map<List<ContentViewModel>>(dList);
-
-            var nlist = _mapper.Map<ContentViewModel>(dList);
-
-
-            if (type == 0)
-            {
-
+            if (type==0) {
+                var list = _mapper.Map<List<ContentViewModel>>(_context.Contents.ToList());
                 return View("Contents", list);
             }
             else
             {
-                return View("ContentsUpdate", nlist);
+                return View("ContentsCreate");
             }
+            
         }
     }
 }

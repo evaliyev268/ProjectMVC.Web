@@ -2,8 +2,7 @@
 @model ContentViewModel
 
 
-<form>
-    <input type="hidden" asp-for="Id"/>
+<form asp-controller="Dictionary" asp-action="Save" method="post">
     <div class="mb-2">
         <label class="form-label" asp-for="Topic">Topic</label>
         <input class="form-control" asp-for="Topic"/>
@@ -15,7 +14,7 @@
         <span class="text-danger" asp-validation-for="Author"></span>
     </div>
     <div class="mb-2">
-        <label class="form-label" asp-for="AuthorsOpinion">Topic</label>
+        <label class="form-label" asp-for="AuthorsOpinion">Opinion</label>
         <input class="form-control" asp-for="AuthorsOpinion" />
         <span class="text-danger" asp-validation-for="AuthorsOpinion"></span>
     </div>
@@ -24,6 +23,6 @@
         <input class="form-control" asp-for="Date" />
         <span class="text-danger" asp-validation-for="Date"></span>
     </div>
-
+    <button class="btn btn-primary" type="submit">Send</button>
 
 </form>

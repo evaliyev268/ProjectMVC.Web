@@ -13,7 +13,13 @@
             </div>
 
             <!-- Link on the right side -->
-            <a href="https://www.google.com/search?q=dolar+tl&oq=do&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPdIBCDM3MTlqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8" target="_blank" class="btn btn-primary ms-3">View</a>
+            <div class="d-flex flex-column">
+            <a href="https://www.google.com/search?q=dolar+tl&oq=do&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPdIBCDM3MTlqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8" target="_blank" class="btn btn-primary ms-3 mt-3">View</a>
+            
+            
+            <a  class="btn btn-danger ms-3 mt-3" asp-controller="Dictionary" asp-action="ContentDelete" asp-route-id="@content.Id">Delete</a>
+            </div>
+
         </div>
     </div>
 
