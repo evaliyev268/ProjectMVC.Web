@@ -1,0 +1,21 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Project.Web.Net.Mvc.Models;
+
+namespace Project.Web.Net.Mvc.Filters
+{
+    public class CustomExceptionFilter: ExceptionFilterAttribute
+    {
+        public override void OnException(ExceptionContext context)
+        {
+           context.ExceptionHandled= true;
+            var myerror=context.Exception.Message;
+
+            context.Result = new RedirectToActionResult("Error", "Home", new ErrorViewModel()
+            {
+                Errors = new List<string>() { $"{myerror}" }
+            }
+            );
+        }
+    }
+}

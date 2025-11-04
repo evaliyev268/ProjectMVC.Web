@@ -1,5 +1,7 @@
 using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using Microsoft.AspNetCore.Mvc;
+using Project.Web.Net.Mvc.Filters;
 using Project.Web.Net.Mvc.Models;
 
 namespace Project.Web.Net.Mvc.Controllers
@@ -13,17 +15,25 @@ namespace Project.Web.Net.Mvc.Controllers
             _logger = logger;
         }
 
+        //[CacheResourceFilter]
+        [Route("/homeindex", Name = "homeindex_route")]
         public IActionResult Index()
         {
+            // throw new Exception("There is an Error Occupied");
+
+            //return RedirectToAction("ContentsIndex","Dictionary");
             return View();
         }
 
     
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [Route("/error", Name = "error_route")]
+        public IActionResult Error(ErrorViewModel theerror)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            theerror.RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+
+            return View(theerror);
         }
     }
 }

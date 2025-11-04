@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
 using Project.Web.Net.Mvc.Data;
+using Project.Web.Net.Mvc.Filters;
+using Project.Web.Net.Mvc.Middlewares;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +18,9 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseMySql(
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
+builder.Services.AddScoped<ErrorFilter>();
+
+builder.Services.AddSingleton<IFileProvider>(new PhysicalFileProvider(Directory.GetCurrentDirectory()));
 
 var app = builder.Build();
 
@@ -30,10 +37,34 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+#region The MapWhen() Example
+//app.MapWhen(context => context.Request.Query.ContainsKey("name"), app =>
+//{
+
+//    app.Use(async(context, next) =>
+//    {
+//        await next();
+//    });
+
+//    app.Run(async context =>
+//    {
+//        await context.Response.WriteAsync("Heyyo");
+//    });
+
+//});
+#endregion
+
+app.UseMiddleware<WhiteIPControlMiddleware>();
+
 app.UseAuthorization();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Dictionary}/{action=ContentsIndex}/{id?}");
+#region Contrubution themed Routing
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Dictionary}/{action=ContentsIndex}/{id?}"
+//    );
+#endregion
+
+app.MapControllers();
 
 app.Run();

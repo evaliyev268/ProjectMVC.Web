@@ -39,6 +39,10 @@ namespace Project.Web.Net.Mvc.Migrations
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<string>("Topic")
                         .HasColumnType("longtext");
 

@@ -11,5 +11,7 @@
         public string? AuthorsOpinion { get; set; }
 
         public DateTime? Date { get; set; }
+
+        public string ImagePath { get; set; }
     }
 }
