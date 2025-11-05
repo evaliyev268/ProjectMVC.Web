@@ -5,7 +5,7 @@
 namespace Project.Web.Net.Mvc.Migrations
 {
     /// <inheritdoc />
-    public partial class AddImagePathForContent : Migration
+    public partial class AdddedNullableImagePathForContents : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,7 +14,7 @@ namespace Project.Web.Net.Mvc.Migrations
                 name: "ImagePath",
                 table: "Contents",
                 type: "longtext",
-                nullable: false)
+                nullable: true)
                 .Annotation("MySql:CharSet", "utf8mb4");
         }
 

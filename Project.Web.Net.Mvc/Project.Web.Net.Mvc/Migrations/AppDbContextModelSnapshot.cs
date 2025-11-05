@@ -40,8 +40,10 @@ namespace Project.Web.Net.Mvc.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int?>("LikeCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("Topic")
                         .HasColumnType("longtext");

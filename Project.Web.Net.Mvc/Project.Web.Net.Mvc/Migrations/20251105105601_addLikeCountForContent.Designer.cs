@@ -12,8 +12,8 @@ using Project.Web.Net.Mvc.Data;
 namespace Project.Web.Net.Mvc.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251104072918_AddImagePathForContent")]
-    partial class AddImagePathForContent
+    [Migration("20251105105601_addLikeCountForContent")]
+    partial class addLikeCountForContent
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,8 +43,10 @@ namespace Project.Web.Net.Mvc.Migrations
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int?>("LikeCount")
+                        .HasColumnType("int");
 
                     b.Property<string>("Topic")
                         .HasColumnType("longtext");

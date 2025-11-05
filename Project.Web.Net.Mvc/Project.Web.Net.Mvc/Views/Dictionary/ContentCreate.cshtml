@@ -2,7 +2,10 @@
 @model ContentViewModel
 
 
+
+
 <form asp-controller="Dictionary" asp-action="Save" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
     <div class="mb-2">
         <label class="form-label" asp-for="Topic">Topic</label>
         <input class="form-control" asp-for="Topic" />
@@ -17,6 +20,11 @@
         <label class="form-label" asp-for="AuthorsOpinion">Opinion</label>
         <input class="form-control" asp-for="AuthorsOpinion" />
         <span class="text-danger" asp-validation-for="AuthorsOpinion"></span>
+    </div>
+    <div class="mb-2">
+        <label class="form-label" asp-for="LikeCount">Like</label>
+        <input class="form-control" asp-for="LikeCount" />
+        <span class="text-danger" asp-validation-for="LikeCount"></span>
     </div>
     <div class="mb-2">
         <label class="form-label" asp-for="Date">Date</label>

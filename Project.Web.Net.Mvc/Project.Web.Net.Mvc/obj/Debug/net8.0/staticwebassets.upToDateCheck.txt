@@ -1,5 +1,25 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\1694a3ad-19ed-4e1d-8173-17b3cf6ed2ee.jpg
+wwwroot\images\17ddfe4e-a6bc-49a7-a8fb-8f1b603db6c2.png
+wwwroot\images\2d3f8cbe-f4bc-4336-9c5b-c219a22cf898.jpg
+wwwroot\images\35b13c92-cfa5-46bf-9cb4-7721dc8ef1c5.jpg
+wwwroot\images\383d624d-a9c0-4cd6-9b26-0e723183d5efrand 2.jpeg
+wwwroot\images\4a1943ce-fbae-4326-a078-61aae75c8812.jpg
+wwwroot\images\616d1d84-3451-41da-87ff-b4e66963a6b7.jpg
+wwwroot\images\61a5d206-a167-4984-9c16-22a618936553.JPG
+wwwroot\images\8a2e5e46-ba34-4f4d-8fe3-e92bff2185e0.jpg
+wwwroot\images\8b39b174-e757-4c3f-961e-e6deaf65be7c.jpg
+wwwroot\images\agss_logo.jpg
+wwwroot\images\ags_o_g_logo.jpg
+wwwroot\images\b0148441-8c45-40a5-8eda-b4746b166bae.png
+wwwroot\images\BusinessFinance-962717560.jpg
+wwwroot\images\c68e61d0-55dc-4f19-8e9c-bd748c00c9b3.jpg
+wwwroot\images\cc7f5a93-100f-4ce1-aacc-f93849ca68b4.JPG
+wwwroot\images\e96ab210-4584-4857-a11e-ed65893797c3photo-1628595351029-c2bf17511435.jpeg
+wwwroot\images\Inclusive-Storytelling-Photos-1346787389.jpg
+wwwroot\images\pngtree-no-image-vector-illustration-isolated-png-image_1694547.jpg
+wwwroot\images\ScienceTechnology-825180846.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

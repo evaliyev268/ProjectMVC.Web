@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.FileProviders;
 using Project.Web.Net.Mvc.Data;
 using Project.Web.Net.Mvc.Filters;
-using Project.Web.Net.Mvc.Middlewares;
+//using Project.Web.Net.Mvc.Middlewares;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -54,7 +54,7 @@ app.UseRouting();
 //});
 #endregion
 
-app.UseMiddleware<WhiteIPControlMiddleware>();
+//app.UseMiddleware<WhiteIPControlMiddleware>();
 
 app.UseAuthorization();
 

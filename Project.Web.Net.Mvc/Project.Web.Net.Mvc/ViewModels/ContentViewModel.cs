@@ -18,8 +18,11 @@ namespace Project.Web.Net.Mvc.ViewModels
 
         [Required]
         public DateTime? Date { get; set; }
+        public string?  ImagePath { get; set; }
+        public IFormFile? Image { get; set; }
 
-        public IFormFile Image { get; set; }
+        public int? LikeCount { get; set; }
+
 
     }
 

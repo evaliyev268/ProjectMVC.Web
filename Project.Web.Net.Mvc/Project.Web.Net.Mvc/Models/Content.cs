@@ -12,6 +12,8 @@
 
         public DateTime? Date { get; set; }
 
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
+
+        public int? LikeCount { get; set; }
     }
 }
