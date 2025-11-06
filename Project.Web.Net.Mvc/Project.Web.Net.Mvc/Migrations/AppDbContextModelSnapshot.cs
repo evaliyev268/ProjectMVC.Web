@@ -17,10 +17,27 @@ namespace Project.Web.Net.Mvc.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.9")
+                .HasAnnotation("ProductVersion", "9.0.10")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
+
+            modelBuilder.Entity("Project.Web.Net.Mvc.Models.Category", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Category");
+                });
 
             modelBuilder.Entity("Project.Web.Net.Mvc.Models.Content", b =>
                 {
@@ -36,6 +53,9 @@ namespace Project.Web.Net.Mvc.Migrations
                     b.Property<string>("AuthorsOpinion")
                         .HasColumnType("longtext");
 
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("Date")
                         .HasColumnType("datetime(6)");
 
@@ -50,7 +70,42 @@ namespace Project.Web.Net.Mvc.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Contents");
+                });
+
+            modelBuilder.Entity("Project.Web.Net.Mvc.Models.Visitor", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    MySqlPropertyBuilderExtensions.UseMySqlIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("longtext");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Visitors");
+                });
+
+            modelBuilder.Entity("Project.Web.Net.Mvc.Models.Content", b =>
+                {
+                    b.HasOne("Project.Web.Net.Mvc.Models.Category", "Category")
+                        .WithMany("Contents")
+                        .HasForeignKey("CategoryId");
+
+                    b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("Project.Web.Net.Mvc.Models.Category", b =>
+                {
+                    b.Navigation("Contents");
                 });
 #pragma warning restore 612, 618
         }

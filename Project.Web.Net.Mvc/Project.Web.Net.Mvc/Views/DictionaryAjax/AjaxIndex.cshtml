@@ -1,0 +1,117 @@
+﻿@section Scripts {
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+    $("#loading").hide();
+
+function LoadComments(){
+         $("#loading").show();     
+    
+    $.ajax({
+            type: "GET",
+            url: "/ajaxlistcomments",
+            
+
+            success: function(data){
+                console.log(data);
+                $("#comments").html("");
+                $.each(data,function(index,item){
+                    var comm=`<div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">${item.name}</h5>
+            
+            <p class="card-text">${item.comment}</p>
+
+          </div>
+        </div>`;
+
+        $("#comments").append(comm);
+                });
+                       
+
+            
+            },
+
+            error: function(error){
+            console.log(error)
+            },
+
+
+           complete: function () {
+
+
+                       $("#loading").hide();
+
+           }
+
+        });
+       
+            }
+
+
+            LoadComments();
+        $("#btnSave").click(function(){
+
+
+            
+        var name=$("#Name").val();
+
+                var comment=$("#Comment").val();
+
+        var jsonData={"name": name, "comment": comment};
+
+        $.ajax({
+            type: "POST",
+            url: "/ajaxsavecomments",
+            data: jsonData,
+
+            success: function(data){
+
+                console.log(data);
+                alert("Comment Added Successfully!");
+                LoadComments();
+
+            },
+
+            error: function(error){
+            console.log(error)
+            }
+        })
+
+        })
+
+                
+        })
+    </script>
+
+}
+
+
+<div id="comments">
+
+</div>
+
+
+<div class="d-flex justify-content-center">
+    <div class="spinner-border" role="status" id="loading">
+        <span class="visually-hidden">Loading...</span>
+
+    </div>
+</div>
+
+<div class="mb-3">
+    <label for="Name" class="form-label">Name</label>
+    <input class="form-control" id="Name" name="Name">
+
+</div>
+
+<div class="form-floating mb-3">
+    <textarea id="Comment" name="Comment" class="form-control" placeholder="Comment" style="height: 100px"></textarea>
+    <label for="Comment">Comment</label>
+</div>
+
+
+
+
+
+<button id="btnSave" type="button" class="btn btn-primary">Save</button>

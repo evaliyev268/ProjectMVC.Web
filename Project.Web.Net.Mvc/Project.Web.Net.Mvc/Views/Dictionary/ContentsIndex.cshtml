@@ -1,6 +1,14 @@
 ﻿@using Project.Web.Net.Mvc.ViewModels
 @model List<ContentViewModel>
 
+
+
+<a class="btn btn-outline-danger mb-3" asp-route="deleteall_route">Delete All</a> |
+<a class="btn btn-outline-info mb-3 ml-2" href="@(ViewBag.UrlBag)">Link</a> |
+
+<p>@ViewBag.CookieBag</p>
+
+
 @foreach (var content in Model)
 {
     <div class="card" style="width: 57rem;">
@@ -10,34 +18,52 @@
                 <h6 class="card-subtitle mb-2 text-body-secondary">@content.Author</h6>
                 <p class="card-text">@content.AuthorsOpinion</p>
 
-                
+
                 @if (content.LikeCount == null)
                 {
 
                     <p class="card-text text-black"> 0 </p>
                 }
-                else {
-                   <p class="card-text text-black"> @content.LikeCount </p>
-                 }
-                
-                <a>@content.Date</a>
+                else
+                {
+                    <p class="card-text text-black"> @content.LikeCount </p>
+                }
+
+                <p class="card-text text-info">@content.Date</p>
+
+                @if (content.CategoryId != null)
+                {
+
+
+                    <div class="card">
+                        <p>
+
+                            @content.Category.Name
+
+                        </p>
+                    </div>
+
+                }
+
+
 
                 <div class="align-middle">
-                    @if (!String.IsNullOrEmpty(content.ImagePath)) {
-                        
+                    @if (!String.IsNullOrEmpty(content.ImagePath))
+                    {
 
-                            <img style="width:100px;height:100px" src="\images\@(content.ImagePath)" />
-                        }
-                        else
-                        {
-                            <img style="width:100px;height:100px" src="\images\pngtree-no-image-vector-illustration-isolated-png-image_1694547.jpg" />
-                        } 
-                    
+
+                        <img style="width:100px;height:100px" src="\images\@(content.ImagePath)" />
+                    }
+                    else
+                    {
+                        <img style="width:100px;height:100px" src="\images\pngtree-no-image-vector-illustration-isolated-png-image_1694547.jpg" />
+                    }
+
 
                 </div>
 
             </div>
-           
+
 
             <div class="d-flex flex-column">
                 <a asp-route="contentupdate_route" asp-route-id="@content.Id" class="btn btn-primary ms-3 mt-3">View</a>
@@ -49,5 +75,5 @@
         </div>
     </div>
 
-    
+
 }

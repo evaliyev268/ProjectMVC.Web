@@ -9,6 +9,8 @@ namespace Project.Web.Net.Mvc.Mapping
         public ViewModelMapping()
         {
             CreateMap<Content, ContentViewModel>().ReverseMap();
+
+            CreateMap<Visitor, VisitorViewModel>().ReverseMap();
         }
     }
 

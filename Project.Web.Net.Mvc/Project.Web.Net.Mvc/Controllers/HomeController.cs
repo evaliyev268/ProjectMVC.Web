@@ -22,6 +22,9 @@ namespace Project.Web.Net.Mvc.Controllers
             // throw new Exception("There is an Error Occupied");
 
             //return RedirectToAction("ContentsIndex","Dictionary");
+
+            Response.Cookies.Append("course-name", "diffrential-equations");
+            
             return View();
         }
 

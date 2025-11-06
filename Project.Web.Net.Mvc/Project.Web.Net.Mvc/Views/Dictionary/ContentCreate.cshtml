@@ -31,11 +31,19 @@
         <input class="form-control" asp-for="Date" />
         <span class="text-danger" asp-validation-for="Date"></span>
     </div>
+    <div class="mt-3 mb-3">
+        <label asp-for="CategoryId">Category</label> <br />
+        <select asp-for="CategoryId"
+                asp-items="ViewBag.CategoryList"
+                class="dropdown btn btn-info  mt-3">
+            <option value="">-- Select Category --</option>
+        </select>
+    </div>
     <div class="mb-3">
         <label asp-for="Image" class="form-label" >Upload Image</label>
         <input class="form-control form-control-sm" asp-for="Image" type="file">
-    </div>
-    <button class="btn btn-primary" type="submit">Send</button>
+    </div>ton>
+    <button class="btn btn-primary" type="submit">Send</but
 
 
     

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Project.Web.Net.Mvc.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Project.Web.Net.Mvc.ViewModels
 {
@@ -23,6 +24,11 @@ namespace Project.Web.Net.Mvc.ViewModels
 
         public int? LikeCount { get; set; }
 
+        [Required (ErrorMessage="Please select the category")]
+        public int? CategoryId { get; set; }
+
+        
+        public Category? Category { get; set; }
 
     }
 

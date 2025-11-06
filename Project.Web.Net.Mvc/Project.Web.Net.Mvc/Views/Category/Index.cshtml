@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Project.Web.Net.Mvc.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a class="btn btn-outline-info" asp-route="categorycreate_route">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    <a asp-route="categoryupdate_route" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-route="categorydetails_route" asp-route-id="@item.Id">Details</a> |
+                    <a asp-route="categorydelete_route" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

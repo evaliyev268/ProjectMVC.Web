@@ -6,6 +6,7 @@ using Project.Web.Net.Mvc.Models;
 using Project.Web.Net.Mvc.Filters;
 using System.Security.AccessControl;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Project.Web.Net.Mvc.Controllers
 {
@@ -22,17 +23,35 @@ namespace Project.Web.Net.Mvc.Controllers
         }
 
 
-        [Route("")]
+        //[Route("")]
         [Route("/contentindex", Name = "contentindex_route")]
         public IActionResult ContentsIndex()
         {
-            var list = _mapper.Map<List<ContentViewModel>>(_context.Contents.ToList());
-            return View(list);
-        }
 
+
+            ViewBag.CookieBag = Request.Cookies["course-name"];
+
+
+            var list = _mapper.Map<List<ContentViewModel>>(_context.Contents.ToList());
+
+            ViewBag.UrlBag = TempData["Url"];
+
+
+            foreach (var item in list)
+            {
+                var category = _context.Category.Find(item.CategoryId);
+                item.Category = category;
+            }
+                return View(list);
+            
+        }
         [Route("/create", Name = "contentcreate_route")]
         public IActionResult ContentCreate()
         {
+            var categories = _context.Category.ToList();
+
+            ViewBag.CategoryList = new SelectList(categories,"Id","Name");
+            
 
             return View();
         }
@@ -75,10 +94,12 @@ namespace Project.Web.Net.Mvc.Controllers
 
                 }
 
-                var product = _mapper.Map<Models.Content>(contentViewModel);
-                product.ImagePath = randomFileName;
+                var content = _mapper.Map<Models.Content>(contentViewModel);
+                content.ImagePath = randomFileName;
 
-                _context.Contents.Add(product);
+               
+
+                _context.Contents.Add(content);
                 _context.SaveChanges();
 
                 return RedirectToAction("ContentsIndex");
@@ -107,7 +128,10 @@ namespace Project.Web.Net.Mvc.Controllers
         {
 
             var content = _context.Contents.Find(id);
-            
+
+            var categories = _context.Category.ToList();
+
+            ViewBag.CategoryList = new SelectList(categories, "Id", "Name", content.CategoryId);
 
             return View(_mapper.Map<ContentViewModel>(content));
         }
@@ -136,6 +160,17 @@ namespace Project.Web.Net.Mvc.Controllers
 
 
             _context.Contents.Update(content);
+            _context.SaveChanges();
+
+
+            return RedirectToAction("ContentsIndex");
+        }
+
+        [Route("/deleteall",Name ="deleteall_route")]
+        public IActionResult DeleteAll()
+        {
+            var contents = _context.Contents.ToList();
+            _context.Contents.RemoveRange(contents);
             _context.SaveChanges();
 
 

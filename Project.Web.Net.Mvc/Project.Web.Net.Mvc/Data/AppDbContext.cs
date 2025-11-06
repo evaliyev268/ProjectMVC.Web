@@ -12,6 +12,8 @@ namespace Project.Web.Net.Mvc.Data
         }
 
         public DbSet<Content> Contents { get; set; }
+        public DbSet<Models.Category> Category { get; set; }
+        public DbSet<Models.Visitor> Visitors { get; set; }
 
     }
 }
